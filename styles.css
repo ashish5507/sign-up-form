@@ -1,0 +1,173 @@
+@font-face{
+    font-family: "Norse Bold";
+    src: url(Fonts/Norse-Bold.otf) format("opentype");
+    font-weight: bold;
+    font-size: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.sidebar{
+    position:relative;
+    width:35vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.background{
+    position:absolute;
+    z-index:0;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+}
+body{
+    display:flex;
+}
+
+.logo{
+    position:relative;
+    z-index:1;
+    width:100%;
+    padding:20px;
+    background-color: rgba(0,0,0,0.5);
+    display:flex;
+    align-items: center;
+    gap:15px;
+    margin-top:40%;
+}
+.logoimg{
+    height:120px;
+    width:auto;
+    margin-left: 20%;
+}
+footer{
+    position:relative;
+    z-index:1;
+    display:flex;
+    justify-content: center;
+    color:white;
+    margin-bottom:10px;
+    font-size:1rem;
+    font-weight:bold;
+}
+
+.logo > .txt{
+    font-family: "Norse Bold";
+    font-size:3.5rem;
+    color:white;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color:grey;
+}
+header{
+    display: block;
+    padding:20px;
+    height:25vh;
+    background-color: #bb9c7f;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+main{
+    flex:1;
+    font-family: 'Roboto',sans-serif;
+}
+.para{
+    text-align:start;
+    font-size:18px;
+}
+
+fieldset{
+    border:none;
+    height:35vh;
+    display:flex;
+    flex-direction: column;
+    padding: 35px;
+    justify-content: space-evenly;
+    gap:20px;
+}
+.inp{
+    display: flex;
+    justify-content: flex-start;
+    gap:5vw;
+}
+input,
+label{
+    display:block;
+}
+label{
+    font-size:0.8rem;
+}
+input{
+    border:2px solid #E5E7EB;
+    height: 30px;
+    font-size:1rem;
+}
+.footer{
+    padding:30px;
+    background-color: #b3a391;
+    height: calc(100vh - 35vh - 25vh - 3vh);
+    font-size:1.2rem;
+}
+button{
+    height: 45px;
+    width: 180px;
+    margin-bottom: 20px;
+    background-color:rgb(107, 73, 44);
+    color:rgb(213, 221, 201);
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.register{
+    text-align: center;
+    height:3vh;
+    background-color: blanchedalmond;
+    vertical-align: middle;
+}
+
+input[type="text"]:user-invalid,
+input[type="email"]:user-invalid,
+input[type="tel"]:user-invalid,
+input[type="password"]:user-invalid{
+    border: 2px solid red;
+}
+
+input[type="text"]:required:valid,
+input[type="email"]:required:valid,
+input[type="tel"]:required:valid,
+input[type="password"]:valid{
+    border: 2px solid rgb(125, 248, 77);
+}
+
+button:hover{
+    background-color: rgb(138, 78, 29);
+    color:white;
+    border:brown;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.login{
+    color:rgb(245, 232, 216);
+}
+

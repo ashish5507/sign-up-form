@@ -20,7 +20,7 @@
 }
 .sidebar{
     position:relative;
-    width:35vw;
+    width:30vw;
     height:100vh;
     display:flex;
     flex-direction: column;
@@ -80,16 +80,22 @@ a:link{
 header{
     display: block;
     padding:20px;
-    height:25vh;
     background-color: #bb9c7f;
     display:flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
+    gap:25px;
 }
 main{
+    display: flex;
+    flex-direction: column;
     flex:1;
     font-family: 'Roboto',sans-serif;
+}
+
+main>*{
+    width:100%;
 }
 .para{
     text-align:start;
@@ -98,7 +104,6 @@ main{
 
 fieldset{
     border:none;
-    height:35vh;
     display:flex;
     flex-direction: column;
     padding: 35px;
@@ -125,8 +130,8 @@ input{
 .footer{
     padding:30px;
     background-color: #b3a391;
-    height: calc(100vh - 35vh - 25vh - 3vh);
     font-size:1.2rem;
+
 }
 button{
     height: 45px;
